@@ -1,0 +1,352 @@
+[
+  {
+    "id": "sony-zv-e10-ii",
+    "stock_level": 11,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 71513
+  },
+  {
+    "id": "canon-eos-r5-mark-ii",
+    "stock_level": 4,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 139603
+  },
+  {
+    "id": "nikon-z6-iii",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 120175
+  },
+  {
+    "id": "fujifilm-x100vi",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 150348
+  },
+  {
+    "id": "leica-sl3",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 36526
+  },
+  {
+    "id": "panasonic-lumix-dc-fz80d",
+    "stock_level": 3,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 151896
+  },
+  {
+    "id": "olympus-om-system-om-1-mark-ii",
+    "stock_level": 8,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 31566
+  },
+  {
+    "id": "ricoh-g900-ii",
+    "stock_level": 6,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 94319
+  },
+  {
+    "id": "pentax-wg-8",
+    "stock_level": 4,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 20070
+  },
+  {
+    "id": "sony-a7c-ii",
+    "stock_level": 6,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 145683
+  },
+  {
+    "id": "canon-eos-r1",
+    "stock_level": 3,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 114683
+  },
+  {
+    "id": "nikon-zf",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 28657
+  },
+  {
+    "id": "fujifilm-x-t50",
+    "stock_level": 13,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 156491
+  },
+  {
+    "id": "leica-d-lux-8",
+    "stock_level": 13,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 62376
+  },
+  {
+    "id": "panasonic-lumix-dc-gh7",
+    "stock_level": 7,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 38326
+  },
+  {
+    "id": "olympus-om-tough-tg-7",
+    "stock_level": 0,
+    "status": "Out of Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 151369
+  },
+  {
+    "id": "ricoh-gr-iiix",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 185022
+  },
+  {
+    "id": "pentax-wg-90",
+    "stock_level": 1,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 86861
+  },
+  {
+    "id": "sony-zv-1-mark-ii",
+    "stock_level": 12,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 192815
+  },
+  {
+    "id": "canon-eos-r8",
+    "stock_level": 7,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 109534
+  },
+  {
+    "id": "nikon-z8",
+    "stock_level": 11,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 159111
+  },
+  {
+    "id": "fujifilm-x-s20",
+    "stock_level": 7,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 92363
+  },
+  {
+    "id": "leica-q3",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 21954
+  },
+  {
+    "id": "panasonic-lumix-s9",
+    "stock_level": 2,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 171914
+  },
+  {
+    "id": "olympus-om-1",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 69046
+  },
+  {
+    "id": "ricoh-wg-70",
+    "stock_level": 3,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 72549
+  },
+  {
+    "id": "pentax-kf",
+    "stock_level": 8,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 181721
+  },
+  {
+    "id": "sony-zv-e1",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 184706
+  },
+  {
+    "id": "canon-eos-r100",
+    "stock_level": 1,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 169644
+  },
+  {
+    "id": "nikon-z9",
+    "stock_level": 8,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 110378
+  },
+  {
+    "id": "sony-a7cr",
+    "stock_level": 12,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 155612
+  },
+  {
+    "id": "canon-powershot-v10",
+    "stock_level": 18,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 32386
+  },
+  {
+    "id": "nikon-z30",
+    "stock_level": 12,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 50188
+  },
+  {
+    "id": "fujifilm-x-h2",
+    "stock_level": 6,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 142535
+  },
+  {
+    "id": "leica-m11",
+    "stock_level": 15,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 150509
+  },
+  {
+    "id": "panasonic-lumix-dc-s5-iix",
+    "stock_level": 1,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 225225
+  },
+  {
+    "id": "olympus-om-5",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 236406
+  },
+  {
+    "id": "ricoh-wg-6",
+    "stock_level": 0,
+    "status": "Out of Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 50827
+  },
+  {
+    "id": "pentax-k-3-mark-iii",
+    "stock_level": 19,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 231679
+  },
+  {
+    "id": "sony-a9-iii",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 228519
+  },
+  {
+    "id": "canon-eos-r50",
+    "stock_level": 6,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 62874
+  },
+  {
+    "id": "nikon-z-fc",
+    "stock_level": 2,
+    "status": "Low Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 184394
+  },
+  {
+    "id": "fujifilm-x-h2s",
+    "stock_level": 15,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 104159
+  },
+  {
+    "id": "leica-sl2-s",
+    "stock_level": 12,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 76759
+  },
+  {
+    "id": "panasonic-lumix-dc-g9-ii",
+    "stock_level": 9,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 64649
+  },
+  {
+    "id": "olympus-pen-e-p7",
+    "stock_level": 4,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 217692
+  },
+  {
+    "id": "ricoh-gr-iii",
+    "stock_level": 13,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 63254
+  },
+  {
+    "id": "pentax-k-1-mark-ii",
+    "stock_level": 5,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 38385
+  },
+  {
+    "id": "sony-a6700",
+    "stock_level": 14,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 71532
+  },
+  {
+    "id": "canon-eos-r10",
+    "stock_level": 6,
+    "status": "In Stock",
+    "last_restocked": "2026-03-29",
+    "price_thb": 94443
+  }
+]
