@@ -1,16 +1,17 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface Items {
   productId: string;
-  name: string;
+  productName: string;
   price: number;
   quantity: number;
 }
 
 interface Order {
-  id: string;
+  orderId: string;
   customerName: string;
   orderDate: string;
   items: Items[];
@@ -20,9 +21,10 @@ interface Order {
 
 interface OrdersTableProps {
   orders: Order[];
+  isFullView?: boolean;
 }
 
-export function OrdersTable({ orders }: OrdersTableProps) {
+export function OrdersTable({ orders, isFullView = false }: OrdersTableProps) {
   const formatTHB = (amount: number) => {
     return new Intl.NumberFormat('th-TH', { style: 'currency', currency: 'THB' }).format(amount);
   };
@@ -41,6 +43,8 @@ export function OrdersTable({ orders }: OrdersTableProps) {
     }
   };
 
+  const itemsToShow = isFullView ? orders : orders.slice(0, 10);
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 30 }}
@@ -49,10 +53,17 @@ export function OrdersTable({ orders }: OrdersTableProps) {
       className="bg-card border border-border rounded-xl overflow-hidden"
     >
       <div className="p-6 border-b border-border flex items-center justify-between">
-        <h3 className="text-lg font-semibold">Recent Orders</h3>
-        <button className="text-xs font-medium text-primary hover:underline transition-all">
-          View All History
-        </button>
+        <h3 className="text-lg font-semibold">
+          {isFullView ? "All Orders History" : "Recent Orders"}
+        </h3>
+        {!isFullView && (
+          <Link 
+            href="/admin/orders" 
+            className="text-xs font-medium text-primary hover:underline transition-all"
+          >
+            View All History
+          </Link>
+        )}
       </div>
 
       <div className="overflow-x-auto">
@@ -68,13 +79,13 @@ export function OrdersTable({ orders }: OrdersTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
-            {orders.slice(0, 10).map((order) => (
-              <tr key={order.id} className="hover:bg-muted/10 transition-colors group">
-                <td className="px-6 py-4 font-mono text-xs">{order.id}</td>
+            {itemsToShow.map((order) => (
+              <tr key={order.orderId} className="hover:bg-muted/10 transition-colors group">
+                <td className="px-6 py-4 font-mono text-xs">{order.orderId}</td>
                 <td className="px-6 py-4 font-medium">{order.customerName}</td>
                 <td className="px-6 py-4 text-muted-foreground">
-                  <span title={order.items.map(i => i.name).join(', ')}>
-                    {truncate(order.items.map(i => i.name).join(', '), 30)}
+                  <span title={order.items.map(i => i.productName).join(', ')}>
+                    {truncate(order.items.map(i => i.productName).join(', '), 30)}
                   </span>
                 </td>
                 <td className="px-6 py-4 text-xs">
@@ -94,7 +105,7 @@ export function OrdersTable({ orders }: OrdersTableProps) {
         </table>
       </div>
       
-      {orders.length === 0 && (
+      {itemsToShow.length === 0 && (
         <div className="flex flex-col items-center justify-center py-20 text-muted-foreground bg-muted/5">
           <p>No orders found yet.</p>
         </div>

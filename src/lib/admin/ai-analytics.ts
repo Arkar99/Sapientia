@@ -1,8 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import { kv } from '@vercel/kv';
 import { chatModel } from '@/lib/ai/gemini';
-
-const ANALYTICS_FILE = path.join(process.cwd(), 'src', 'data', 'ai_analytics.json');
 
 export interface AIAnalyticsEvent {
   id: string;
@@ -16,15 +13,14 @@ export interface AIAnalyticsEvent {
   isCorrection: boolean;
 }
 
-export function getAnalyticsData(): AIAnalyticsEvent[] {
+const KV_KEY = 'ai_analytics';
+
+export async function getAnalyticsData(): Promise<AIAnalyticsEvent[]> {
   try {
-    if (!fs.existsSync(ANALYTICS_FILE)) {
-      return [];
-    }
-    const data = fs.readFileSync(ANALYTICS_FILE, 'utf-8');
-    return JSON.parse(data);
+    const data = await kv.get<AIAnalyticsEvent[]>(KV_KEY);
+    return data || [];
   } catch (error) {
-    console.error("Failed to read analytics:", error);
+    console.error("Failed to read analytics from KV:", error);
     return [];
   }
 }
@@ -78,11 +74,11 @@ export async function trackChatAnalytics(
        isCorrection: analysis.isCorrection || false
     };
 
-    const data = getAnalyticsData();
+    const data = await getAnalyticsData();
     data.push(newEvent);
-    fs.writeFileSync(ANALYTICS_FILE, JSON.stringify(data, null, 2));
+    await kv.set(KV_KEY, data);
 
   } catch (error) {
-     console.error("Error tracking chat analytics:", error);
+     console.error("Error tracking chat analytics to KV:", error);
   }
 }

@@ -1,1938 +1,317 @@
 [
   {
-    "id": "ORD-202600",
-    "customerName": "Krit P.",
-    "orderDate": "2026-03-28T15:37:12.409Z",
+    "orderId": "ORD-72351",
+    "orderDate": "2026-03-01T10:15:22Z",
+    "customerName": "Somsak Rakthai",
     "items": [
       {
-        "productId": "ricoh-g900-ii",
-        "name": "Ricoh G900 II",
-        "price": 32900,
-        "quantity": 2
+        "productId": "canon-eos-r5-mark-ii",
+        "productName": "Canon EOS R5 Mark II",
+        "quantity": 1,
+        "price": 159900
       }
     ],
-    "totalAmount": 65800,
-    "status": "Processing",
-    "deliveryStatus": "Processing"
+    "totalAmount": 159900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202601",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-03-27T15:37:12.409Z",
+    "orderId": "ORD-12948",
+    "orderDate": "2026-03-02T14:45:10Z",
+    "customerName": "Nattapong Kittisak",
     "items": [
       {
-        "productId": "panasonic-lumix-s9",
-        "name": "Panasonic Lumix S9",
-        "price": 92900,
-        "quantity": 1
+        "productId": "sony-alpha-a7r-v",
+        "productName": "Sony Alpha A7R V",
+        "quantity": 1,
+        "price": 139900
       }
     ],
-    "totalAmount": 92900,
-    "status": "Processing",
-    "deliveryStatus": "Processing"
+    "totalAmount": 139900,
+    "status": "Shipped"
   },
   {
-    "id": "ORD-202602",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-03-27T15:37:12.409Z",
+    "orderId": "ORD-55210",
+    "orderDate": "2026-03-04T09:22:15Z",
+    "customerName": "Praew Punyisa",
     "items": [
       {
-        "productId": "sony-a7c",
-        "name": "Sony a7C",
-        "price": 99900,
-        "quantity": 1
+        "productId": "nikon-z8",
+        "productName": "Nikon Z8",
+        "quantity": 1,
+        "price": 129900
       }
     ],
-    "totalAmount": 99900,
-    "status": "Processing",
-    "deliveryStatus": "Processing"
+    "totalAmount": 129900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202603",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-26T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-sl3",
-        "name": "Leica SL3",
-        "price": 107900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 215800,
-    "status": "Processing",
-    "deliveryStatus": "Processing"
-  },
-  {
-    "id": "ORD-202604",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-25T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "ricoh-wg-6",
-        "name": "Ricoh WG-6",
-        "price": 24900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 49800,
-    "status": "Shipped",
-    "deliveryStatus": "Shipped"
-  },
-  {
-    "id": "ORD-202605",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-24T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-1d-x-mark-iii",
-        "name": "Canon EOS-1D X Mark III",
-        "price": 65900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 65900,
-    "status": "Shipped",
-    "deliveryStatus": "Shipped"
-  },
-  {
-    "id": "ORD-202606",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-03-23T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-90d",
-        "name": "Canon EOS 90D",
-        "price": 36900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 36900,
-    "status": "Shipped",
-    "deliveryStatus": "Shipped"
-  },
-  {
-    "id": "ORD-202607",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-03-22T15:37:12.409Z",
+    "orderId": "ORD-33812",
+    "orderDate": "2026-03-05T18:30:45Z",
+    "customerName": "Chaiwat Siri",
     "items": [
       {
         "productId": "fujifilm-x-t5",
-        "name": "Fujifilm X-T5",
-        "price": 51900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 103800,
-    "status": "Shipped",
-    "deliveryStatus": "Shipped"
-  },
-  {
-    "id": "ORD-202608",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-03-22T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-d3500",
-        "name": "Nikon D3500",
-        "price": 51900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 103800,
-    "status": "Shipped",
-    "deliveryStatus": "Shipped"
-  },
-  {
-    "id": "ORD-202609",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-21T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-d7500",
-        "name": "Nikon D7500",
-        "price": 57900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 57900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202610",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-03-20T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-250d",
-        "name": "Canon EOS 250D",
-        "price": 51900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 103800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202611",
-    "customerName": "Suda K.",
-    "orderDate": "2026-03-19T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-d3500",
-        "name": "Nikon D3500",
-        "price": 51900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 103800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202612",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-03-18T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "ricoh-wg-70",
-        "name": "Ricoh WG-70",
-        "price": 15900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 31800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202613",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-03-18T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-gx850",
-        "name": "Panasonic Lumix DC-GX850",
-        "price": 25900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 51800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202614",
-    "customerName": "Suda K.",
-    "orderDate": "2026-03-17T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z9",
-        "name": "Nikon Z9",
-        "price": 82900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 82900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202615",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-03-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-m-e-(typ-240)",
-        "name": "Leica M-E (Typ 240)",
-        "price": 86900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 86900,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202616",
-    "customerName": "Pavin S.",
-    "orderDate": "2026-03-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-r8",
-        "name": "Canon EOS R8",
-        "price": 121900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 121900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202617",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-03-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-4000d",
-        "name": "Canon EOS 4000D",
-        "price": 30900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 30900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202618",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-03-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-pen-f",
-        "name": "Olympus PEN-F",
-        "price": 33900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 67800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202619",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-03-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-1d-x-mark-iii",
-        "name": "Canon EOS-1D X Mark III",
-        "price": 65900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 131800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202620",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-1300d",
-        "name": "Canon EOS 1300D",
-        "price": 39900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 79800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202621",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-03-14T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-g95",
-        "name": "Panasonic Lumix DC-G95",
-        "price": 31900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 63800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202622",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-03-14T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-x-u-(typ-113)",
-        "name": "Leica X-U (Typ 113)",
-        "price": 36900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 36900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202623",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-03-14T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-tl2",
-        "name": "Leica TL2",
-        "price": 28900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 57800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202624",
-    "customerName": "Praew M.",
-    "orderDate": "2026-03-13T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-1300d",
-        "name": "Canon EOS 1300D",
-        "price": 39900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 79800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202625",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-03-13T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-d780",
-        "name": "Nikon D780",
-        "price": 98900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 98900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202626",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-03-13T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-r5",
-        "name": "Canon EOS R5",
-        "price": 104900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 104900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202627",
-    "customerName": "Praew M.",
-    "orderDate": "2026-03-12T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-xp90",
-        "name": "Fujifilm XP90",
-        "price": 12900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 12900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202628",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-03-12T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "ricoh-gr-iiix",
-        "name": "Ricoh GR IIIx",
-        "price": 42900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 85800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202629",
-    "customerName": "Pavin S.",
-    "orderDate": "2026-03-11T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-zv-1f",
-        "name": "Sony ZV-1F",
-        "price": 44900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 89800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202630",
-    "customerName": "Arthit L.",
-    "orderDate": "2026-03-11T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-a6100",
-        "name": "Sony a6100",
-        "price": 44900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 44900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202631",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-03-11T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z-fc",
-        "name": "Nikon Z fc",
-        "price": 54900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 54900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202632",
-    "customerName": "Arthit L.",
-    "orderDate": "2026-03-10T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-pen-e-pl9",
-        "name": "Olympus PEN E-PL9",
-        "price": 22900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 45800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202633",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-03-10T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-stylus-tough-tg-870",
-        "name": "Olympus Stylus Tough TG-870",
-        "price": 24900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 49800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202634",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-09T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-powershot-sx740-hs",
-        "name": "Canon PowerShot SX740 HS",
-        "price": 19900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 39800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202635",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-03-08T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-d-lux-7",
-        "name": "Leica D-Lux 7",
-        "price": 34900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 69800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202636",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-03-08T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-zv-1f",
-        "name": "Sony ZV-1F",
-        "price": 44900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 44900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202637",
-    "customerName": "Krit P.",
-    "orderDate": "2026-03-08T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-t50",
-        "name": "Fujifilm X-T50",
-        "price": 50900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 50900,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202638",
-    "customerName": "Nattapong T.",
-    "orderDate": "2026-03-07T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-sl3",
-        "name": "Leica SL3",
-        "price": 107900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 215800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202639",
-    "customerName": "Krit P.",
-    "orderDate": "2026-03-06T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-tl",
-        "name": "Leica TL",
-        "price": 36900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 73800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202640",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-03-06T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-1d-x-mark-iii",
-        "name": "Canon EOS-1D X Mark III",
-        "price": 65900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 131800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202641",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-03-05T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-bgh1",
-        "name": "Panasonic Lumix DC-BGH1",
-        "price": 26900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 53800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202642",
-    "customerName": "Arthit L.",
-    "orderDate": "2026-03-05T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z6-iii",
-        "name": "Nikon Z6 III",
-        "price": 97900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 97900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202643",
-    "customerName": "Arthit L.",
-    "orderDate": "2026-03-04T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "pentax-k-70",
-        "name": "Pentax K-70",
-        "price": 59900,
-        "quantity": 1
+        "productName": "Fujifilm X-T5",
+        "quantity": 1,
+        "price": 59900
       }
     ],
     "totalAmount": 59900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "status": "Processing"
   },
   {
-    "id": "ORD-202644",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-03-04T15:37:12.409Z",
+    "orderId": "ORD-99124",
+    "orderDate": "2026-03-07T11:05:30Z",
+    "customerName": "Malee Kong",
     "items": [
       {
-        "productId": "panasonic-lumix-dc-gh6",
-        "name": "Panasonic Lumix DC-GH6",
-        "price": 26900,
-        "quantity": 2
+        "productId": "canon-eos-r8",
+        "productName": "Canon EOS R8",
+        "quantity": 1,
+        "price": 52900
       }
     ],
-    "totalAmount": 53800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 52900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202645",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-03-04T15:37:12.409Z",
+    "orderId": "ORD-21556",
+    "orderDate": "2026-03-09T13:40:12Z",
+    "customerName": "Anan Tech",
     "items": [
       {
-        "productId": "canon-eos-m6-mark-ii",
-        "name": "Canon EOS M6 Mark II",
-        "price": 39900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 79800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202646",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-03-03T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-om-d-e-m1-mark-iii",
-        "name": "Olympus OM-D E-M1 Mark III",
-        "price": 34900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 69800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202647",
-    "customerName": "Krit P.",
-    "orderDate": "2026-03-03T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-m10-r",
-        "name": "Leica M10-R",
-        "price": 89900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 179800,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202648",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-03-02T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-finepix-xp120",
-        "name": "Fujifilm FinePix XP120",
-        "price": 12900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 25800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202649",
-    "customerName": "Suda K.",
-    "orderDate": "2026-03-02T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-om-1",
-        "name": "Olympus OM-1",
-        "price": 45900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 45900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202650",
-    "customerName": "Praew M.",
-    "orderDate": "2026-03-02T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-a7cr",
-        "name": "Sony a7CR",
-        "price": 120900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 241800,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202651",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-03-01T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-a3",
-        "name": "Fujifilm X-A3",
-        "price": 43900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 43900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202652",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-03-01T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "pentax-wg-8",
-        "name": "Pentax WG-8",
-        "price": 15900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 31800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202653",
-    "customerName": "Praew M.",
-    "orderDate": "2026-02-28T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-dl24-500",
-        "name": "Nikon DL24-500",
-        "price": 38900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 38900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202654",
-    "customerName": "Praew M.",
-    "orderDate": "2026-02-28T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-rebel-sl2",
-        "name": "Canon EOS Rebel SL2",
-        "price": 54900,
-        "quantity": 1
+        "productId": "sony-alpha-a6700",
+        "productName": "Sony Alpha a6700",
+        "quantity": 1,
+        "price": 54900
       }
     ],
     "totalAmount": 54900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "status": "Shipped"
   },
   {
-    "id": "ORD-202655",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-02-28T15:37:12.409Z",
+    "orderId": "ORD-88237",
+    "orderDate": "2026-03-11T16:20:00Z",
+    "customerName": "Kanya Sook",
     "items": [
       {
-        "productId": "nikon-coolpix-b500",
-        "name": "Nikon Coolpix B500",
-        "price": 19900,
-        "quantity": 2
+        "productId": "leica-q3",
+        "productName": "Leica Q3",
+        "quantity": 1,
+        "price": 215000
       }
     ],
-    "totalAmount": 39800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 215000,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202656",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-27T15:37:12.409Z",
+    "orderId": "ORD-44109",
+    "orderDate": "2026-03-13T08:50:44Z",
+    "customerName": "Wanchai Dee",
     "items": [
       {
-        "productId": "nikon-coolpix-b700",
-        "name": "Nikon Coolpix B700",
-        "price": 23900,
-        "quantity": 1
+        "productId": "panasonic-lumix-s5-ii",
+        "productName": "Panasonic Lumix S5 II",
+        "quantity": 1,
+        "price": 72900
       }
     ],
-    "totalAmount": 23900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 72900,
+    "status": "Processing"
   },
   {
-    "id": "ORD-202657",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-27T15:37:12.409Z",
+    "orderId": "ORD-66712",
+    "orderDate": "2026-03-15T12:15:33Z",
+    "customerName": "Siriporn Jai",
     "items": [
       {
-        "productId": "nikon-d7500",
-        "name": "Nikon D7500",
-        "price": 57900,
-        "quantity": 1
+        "productId": "om-system-om-1-ii",
+        "productName": "OM System OM-1 II",
+        "quantity": 1,
+        "price": 84900
       }
     ],
-    "totalAmount": 57900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 84900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202658",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-27T15:37:12.409Z",
+    "orderId": "ORD-11550",
+    "orderDate": "2026-03-17T15:35:10Z",
+    "customerName": "Arthit Sun",
     "items": [
       {
-        "productId": "nikon-z6",
-        "name": "Nikon Z6",
-        "price": 100900,
-        "quantity": 2
+        "productId": "nikon-z-f",
+        "productName": "Nikon Z f",
+        "quantity": 1,
+        "price": 75900
       }
     ],
-    "totalAmount": 201800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 75900,
+    "status": "Shipped"
   },
   {
-    "id": "ORD-202659",
-    "customerName": "Suda K.",
-    "orderDate": "2026-02-26T15:37:12.409Z",
+    "orderId": "ORD-44910",
+    "orderDate": "2026-03-19T10:20:44Z",
+    "customerName": "Boonmee Loy",
     "items": [
       {
-        "productId": "nikon-coolpix-w150",
-        "name": "Nikon Coolpix W150",
-        "price": 24900,
-        "quantity": 1
+        "productId": "sigma-fp-l",
+        "productName": "Sigma fp L",
+        "quantity": 1,
+        "price": 92900
       }
     ],
-    "totalAmount": 24900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 92900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202660",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-25T15:37:12.409Z",
+    "orderId": "ORD-22331",
+    "orderDate": "2026-03-20T14:15:22Z",
+    "customerName": "Tawin Chart",
     "items": [
       {
-        "productId": "fujifilm-x-t100",
-        "name": "Fujifilm X-T100",
-        "price": 42900,
-        "quantity": 1
+        "productId": "hasselblad-x2d-100c",
+        "productName": "Hasselblad X2D 100C",
+        "quantity": 1,
+        "price": 285900
       }
     ],
-    "totalAmount": 42900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 285900,
+    "status": "Processing"
   },
   {
-    "id": "ORD-202661",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-02-25T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-coolpix-p950",
-        "name": "Nikon Coolpix P950",
-        "price": 19900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 39800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202662",
-    "customerName": "Suda K.",
-    "orderDate": "2026-02-24T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-t100",
-        "name": "Fujifilm X-T100",
-        "price": 42900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 42900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202663",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-02-23T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-h2",
-        "name": "Fujifilm X-H2",
-        "price": 34900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 69800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202664",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-22T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-powershot-sx730-hs",
-        "name": "Canon PowerShot SX730 HS",
-        "price": 25900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 25900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202665",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-02-22T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-d-lux-8",
-        "name": "Leica D-Lux 8",
-        "price": 29900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 29900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202666",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-22T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-pro3",
-        "name": "Fujifilm X-Pro3",
-        "price": 40900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 40900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202667",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-21T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z50",
-        "name": "Nikon Z50",
-        "price": 34900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 34900,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202668",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-02-21T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-t2",
-        "name": "Fujifilm X-T2",
-        "price": 36900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 73800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202669",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-21T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-fx30",
-        "name": "Sony FX30",
-        "price": 65900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 65900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202670",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-02-20T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-s1h",
-        "name": "Panasonic Lumix DC-S1H",
-        "price": 85900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 85900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202671",
-    "customerName": "Suda K.",
-    "orderDate": "2026-02-19T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-x-u-(typ-113)",
-        "name": "Leica X-U (Typ 113)",
-        "price": 36900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 36900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202672",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-18T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z9",
-        "name": "Nikon Z9",
-        "price": 82900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 165800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202673",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-18T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x100vi",
-        "name": "Fujifilm X100VI",
-        "price": 63900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 63900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202674",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-17T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-coolpix-w150",
-        "name": "Nikon Coolpix W150",
-        "price": 24900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 49800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202675",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-17T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-6d-mark-ii",
-        "name": "Canon EOS 6D Mark II",
-        "price": 68900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 68900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202676",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-t4",
-        "name": "Fujifilm X-T4",
-        "price": 49900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 99800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202677",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-om-d-e-m10-iii",
-        "name": "Olympus OM-D E-M10 III",
-        "price": 30900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 30900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202678",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-02-16T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-alpha-a7r-iii",
-        "name": "Sony Alpha a7R III",
-        "price": 101900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 203800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202679",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-a7c",
-        "name": "Sony a7C",
-        "price": 99900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 199800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202680",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-02-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-ts7",
-        "name": "Panasonic Lumix DC-TS7",
-        "price": 20900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 41800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202681",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-15T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-gh5s",
-        "name": "Panasonic Lumix DC-GH5S",
-        "price": 22900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 45800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202682",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-14T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-coolpix-a900",
-        "name": "Nikon Coolpix A900",
-        "price": 21900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 21900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202683",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-14T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "pentax-k-1-mark-ii",
-        "name": "Pentax K-1 Mark II",
-        "price": 103900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 207800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202684",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-13T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-pen-e-p7",
-        "name": "Olympus PEN E-P7",
-        "price": 22900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 45800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202685",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-13T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x100vi",
-        "name": "Fujifilm X100VI",
-        "price": 63900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 127800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202686",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-02-13T15:37:12.409Z",
+    "orderId": "ORD-55001",
+    "orderDate": "2026-03-21T18:45:10Z",
+    "customerName": "Lek Sang",
     "items": [
       {
         "productId": "canon-eos-r10",
-        "name": "Canon EOS R10",
-        "price": 42900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 85800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202687",
-    "customerName": "Praew M.",
-    "orderDate": "2026-02-12T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-dl24-85",
-        "name": "Nikon DL24-85",
-        "price": 39900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 79800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202688",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-12T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-t30",
-        "name": "Fujifilm X-T30",
-        "price": 42900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 85800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202689",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-12T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-77d",
-        "name": "Canon EOS 77D",
-        "price": 53900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 53900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202690",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-02-11T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "ricoh-g900-ii",
-        "name": "Ricoh G900 II",
-        "price": 32900,
-        "quantity": 1
+        "productName": "Canon EOS R10",
+        "quantity": 1,
+        "price": 32900
       }
     ],
     "totalAmount": 32900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "status": "Completed"
   },
   {
-    "id": "ORD-202691",
-    "customerName": "Suda K.",
-    "orderDate": "2026-02-11T15:37:12.409Z",
+    "orderId": "ORD-88122",
+    "orderDate": "2026-03-22T11:30:15Z",
+    "customerName": "Wipa Moon",
     "items": [
       {
-        "productId": "leica-sl2-s",
-        "name": "Leica SL2-S",
-        "price": 94900,
-        "quantity": 2
+        "productId": "sony-alpha-zv-e10",
+        "productName": "Sony Alpha ZV-E10",
+        "quantity": 1,
+        "price": 23900
       }
     ],
-    "totalAmount": 189800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 23900,
+    "status": "Shipped"
   },
   {
-    "id": "ORD-202692",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-02-11T15:37:12.409Z",
+    "orderId": "ORD-33774",
+    "orderDate": "2026-03-23T09:10:44Z",
+    "customerName": "Tanat Star",
     "items": [
       {
-        "productId": "nikon-z5",
-        "name": "Nikon Z5",
-        "price": 96900,
-        "quantity": 1
+        "productId": "nikon-z30",
+        "productName": "Nikon Z30",
+        "quantity": 1,
+        "price": 25900
       }
     ],
-    "totalAmount": 96900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 25900,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202693",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-02-10T15:37:12.409Z",
+    "orderId": "ORD-99551",
+    "orderDate": "2026-03-24T16:22:33Z",
+    "customerName": "Dao Jan",
     "items": [
       {
-        "productId": "leica-q2",
-        "name": "Leica Q2",
-        "price": 106900,
-        "quantity": 2
+        "productId": "fujifilm-x-s20",
+        "productName": "Fujifilm X-S20",
+        "quantity": 1,
+        "price": 45900
       }
     ],
-    "totalAmount": 213800,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 45900,
+    "status": "Processing"
   },
   {
-    "id": "ORD-202694",
-    "customerName": "Arthit L.",
-    "orderDate": "2026-02-10T15:37:12.409Z",
+    "orderId": "ORD-12345",
+    "orderDate": "2026-03-25T10:00:00Z",
+    "customerName": "Somchai Lee",
     "items": [
       {
-        "productId": "canon-eos-90d",
-        "name": "Canon EOS 90D",
-        "price": 36900,
-        "quantity": 2
+        "productId": "canon-eos-r1",
+        "productName": "Canon EOS R1",
+        "quantity": 1,
+        "price": 219000
       }
     ],
-    "totalAmount": 73800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 219000,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202695",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-02-10T15:37:12.409Z",
+    "orderId": "ORD-67890",
+    "orderDate": "2026-03-26T14:45:22Z",
+    "customerName": "Jane Smith",
     "items": [
       {
-        "productId": "fujifilm-x70",
-        "name": "Fujifilm X70",
-        "price": 47900,
-        "quantity": 2
+        "productId": "sony-alpha-a1",
+        "productName": "Sony Alpha A1",
+        "quantity": 1,
+        "price": 209900
       }
     ],
-    "totalAmount": 95800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 209900,
+    "status": "Shipped"
   },
   {
-    "id": "ORD-202696",
-    "customerName": "Ananda K.",
-    "orderDate": "2026-02-09T15:37:12.409Z",
+    "orderId": "ORD-11223",
+    "orderDate": "2026-03-27T09:30:10Z",
+    "customerName": "Bob Wilson",
     "items": [
       {
-        "productId": "panasonic-lumix-dc-zs200",
-        "name": "Panasonic Lumix DC-ZS200",
-        "price": 30900,
-        "quantity": 2
+        "productId": "nikon-z9",
+        "productName": "Nikon Z9",
+        "quantity": 1,
+        "price": 195000
       }
     ],
-    "totalAmount": 61800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 195000,
+    "status": "Processing"
   },
   {
-    "id": "ORD-202697",
-    "customerName": "Pavin S.",
-    "orderDate": "2026-02-09T15:37:12.409Z",
+    "orderId": "ORD-44556",
+    "orderDate": "2026-03-28T16:15:45Z",
+    "customerName": "Alice Wong",
     "items": [
       {
-        "productId": "canon-eos-rebel-t7i",
-        "name": "Canon EOS Rebel T7i",
-        "price": 59900,
-        "quantity": 1
+        "productId": "leica-sl3",
+        "productName": "Leica SL3",
+        "quantity": 1,
+        "price": 245000
       }
     ],
-    "totalAmount": 59900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 245000,
+    "status": "Completed"
   },
   {
-    "id": "ORD-202698",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-02-09T15:37:12.409Z",
+    "orderId": "ORD-88990",
+    "orderDate": "2026-03-29T10:20:00Z",
+    "customerName": "Charlie Brown",
     "items": [
       {
-        "productId": "nikon-coolpix-p950",
-        "name": "Nikon Coolpix P950",
-        "price": 19900,
-        "quantity": 2
+        "productId": "canon-eos-r5",
+        "productName": "Canon EOS R5",
+        "quantity": 1,
+        "price": 129900
       }
     ],
-    "totalAmount": 39800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202699",
-    "customerName": "Praew M.",
-    "orderDate": "2026-02-08T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "pentax-k-70",
-        "name": "Pentax K-70",
-        "price": 59900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 119800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202700",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-07T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-4000d",
-        "name": "Canon EOS 4000D",
-        "price": 30900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 61800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202701",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-02-06T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-pen-e-p7",
-        "name": "Olympus PEN E-P7",
-        "price": 22900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 22900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202702",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-06T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-r10",
-        "name": "Canon EOS R10",
-        "price": 42900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 85800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202703",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-02-05T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-om-system-om-1-mark-ii",
-        "name": "Olympus OM System OM-1 Mark II",
-        "price": 43900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 43900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202704",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-05T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-z6-ii",
-        "name": "Nikon Z6 II",
-        "price": 103900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 207800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202705",
-    "customerName": "Wichai J.",
-    "orderDate": "2026-02-05T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "zeiss-zx1",
-        "name": "Zeiss ZX1",
-        "price": 99900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 199800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202706",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-04T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-finepix-xp140",
-        "name": "Fujifilm FinePix XP140",
-        "price": 19900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 39800,
-    "status": "Canceled",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202707",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-04T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-a10",
-        "name": "Fujifilm X-A10",
-        "price": 39900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 79800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202708",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-04T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-s1",
-        "name": "Panasonic Lumix DC-S1",
-        "price": 83900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 167800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202709",
-    "customerName": "Krit P.",
-    "orderDate": "2026-02-03T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-alpha-a6300",
-        "name": "Sony Alpha a6300",
-        "price": 44900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 44900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202710",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-02-03T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "sony-zv-1-mark-ii",
-        "name": "Sony ZV-1 Mark II",
-        "price": 29900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 29900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202711",
-    "customerName": "Suda K.",
-    "orderDate": "2026-02-02T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-rebel-t7",
-        "name": "Canon EOS Rebel T7",
-        "price": 45900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 91800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202712",
-    "customerName": "Benjarong T.",
-    "orderDate": "2026-02-02T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "leica-sl2",
-        "name": "Leica SL2",
-        "price": 88900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 88900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202713",
-    "customerName": "Somchai P.",
-    "orderDate": "2026-02-01T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-pro3",
-        "name": "Fujifilm X-Pro3",
-        "price": 40900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 81800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202714",
-    "customerName": "Ploy W.",
-    "orderDate": "2026-02-01T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "fujifilm-x-a3",
-        "name": "Fujifilm X-A3",
-        "price": 43900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 43900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202715",
-    "customerName": "Pavin S.",
-    "orderDate": "2026-01-31T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-eos-r8",
-        "name": "Canon EOS R8",
-        "price": 121900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 243800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202716",
-    "customerName": "Thanayut S.",
-    "orderDate": "2026-01-30T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "canon-powershot-sx740-hs",
-        "name": "Canon PowerShot SX740 HS",
-        "price": 19900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 39800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202717",
-    "customerName": "Suda K.",
-    "orderDate": "2026-01-29T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "olympus-om-d-e-m10-iii",
-        "name": "Olympus OM-D E-M10 III",
-        "price": 30900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 30900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202718",
-    "customerName": "Kanya R.",
-    "orderDate": "2026-01-29T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-coolpix-w150",
-        "name": "Nikon Coolpix W150",
-        "price": 24900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 24900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202719",
-    "customerName": "Chaiwat M.",
-    "orderDate": "2026-01-28T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "nikon-coolpix-b600",
-        "name": "Nikon Coolpix B600",
-        "price": 18900,
-        "quantity": 1
-      }
-    ],
-    "totalAmount": 18900,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
-  },
-  {
-    "id": "ORD-202720",
-    "customerName": "Sasin K.",
-    "orderDate": "2026-01-28T15:37:12.409Z",
-    "items": [
-      {
-        "productId": "panasonic-lumix-dc-s1",
-        "name": "Panasonic Lumix DC-S1",
-        "price": 83900,
-        "quantity": 2
-      }
-    ],
-    "totalAmount": 167800,
-    "status": "Delivered",
-    "deliveryStatus": "Delivered"
+    "totalAmount": 129900,
+    "status": "Processing"
   }
 ]

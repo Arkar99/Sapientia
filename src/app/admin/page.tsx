@@ -1,19 +1,16 @@
-import fs from 'fs';
-import path from 'path';
+import { kv } from '@vercel/kv';
 import { StatCard } from "@/components/admin/StatCard";
 import { DashboardCharts } from "@/components/admin/DashboardCharts";
 import { OrdersTable } from "@/components/admin/OrdersTable";
+
 
 export const metadata = {
   title: "Admin Dashboard | Sapientia",
   description: "Sales and Inventory analytics for Sapientia Camera Store.",
 };
 
-export default function AdminDashboardPage() {
-  const ordersPath = path.join(process.cwd(), "src/data/orders.json");
-  const orders = fs.existsSync(ordersPath) 
-    ? JSON.parse(fs.readFileSync(ordersPath, "utf-8")) 
-    : [];
+export default async function AdminDashboardPage() {
+  const orders = (await kv.get<any[]>('orders')) || [];
 
   const now = new Date();
   const currentMonth = now.getMonth();
