@@ -1,21 +1,11 @@
-import fs from "fs";
-import path from "path";
 import { InventoryManager } from "@/components/admin/InventoryManager";
+import { loadCameras, loadInventory } from "@/lib/data";
 
 export const dynamic = 'force-dynamic';
 
-function getInitialData() {
-  const invPath = path.join(process.cwd(), "src", "data", "inventory.json");
-  const camPath = path.join(process.cwd(), "src", "data", "cameras.json");
-  
-  const inventory = JSON.parse(fs.readFileSync(invPath, "utf-8"));
-  const cameras = JSON.parse(fs.readFileSync(camPath, "utf-8"));
-  
-  return { inventory, cameras };
-}
-
 export default async function InventoryPage() {
-  const { inventory, cameras } = getInitialData();
+  const inventory = loadInventory();
+  const cameras = loadCameras();
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">

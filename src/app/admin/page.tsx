@@ -2,7 +2,7 @@ import { kv } from '@vercel/kv';
 import { StatCard } from "@/components/admin/StatCard";
 import { DashboardCharts } from "@/components/admin/DashboardCharts";
 import { OrdersTable } from "@/components/admin/OrdersTable";
-
+import { formatTHB } from "@/lib/ai/gemini";
 
 export const metadata = {
   title: "Admin Dashboard | Sapientia",
@@ -10,34 +10,23 @@ export const metadata = {
 };
 
 export default async function AdminDashboardPage() {
-  const orders = (await kv.get<any[]>('orders')) || [];
+  const orders = (await kv.get<any[]>('orders')) || []; // eslint-disable-line @typescript-eslint/no-explicit-any
 
   const now = new Date();
   const currentMonth = now.getMonth();
   const currentYear = now.getFullYear();
 
-  // 1. Calculate Monthly Revenue
-  const monthlyRevenue = orders
-    .filter((o: any) => {
-      const d = new Date(o.orderDate);
-      return d.getMonth() === currentMonth && d.getFullYear() === currentYear && o.status !== "Canceled";
-    })
-    .reduce((sum: number, o: any) => sum + o.totalAmount, 0);
-
-  // 2. Calculate Monthly Orders
-  const monthlyOrders = orders.filter((o: any) => {
-    const d = new Date(o.orderDate);
-    return d.getMonth() === currentMonth && d.getFullYear() === currentYear && o.status !== "Canceled";
-  }).length;
-
-  // 3. Calculate Lifetime Sales
-  const lifetimeSales = orders
-    .filter((o: any) => o.status !== "Canceled")
-    .reduce((sum: number, o: any) => sum + o.totalAmount, 0);
-
-  const formatTHB = (amount: number) => {
-    return new Intl.NumberFormat('th-TH', { style: 'currency', currency: 'THB' }).format(amount);
+  const isCurrentMonth = (dateStr: string) => {
+    const d = new Date(dateStr);
+    return d.getMonth() === currentMonth && d.getFullYear() === currentYear;
   };
+
+  const activeOrders = orders.filter((o) => o.status !== "Canceled");
+  const monthlyActiveOrders = activeOrders.filter((o) => isCurrentMonth(o.orderDate));
+
+  const monthlyRevenue = monthlyActiveOrders.reduce((sum, o) => sum + o.totalAmount, 0);
+  const monthlyOrders = monthlyActiveOrders.length;
+  const lifetimeSales = activeOrders.reduce((sum, o) => sum + o.totalAmount, 0);
 
   return (
     <div className="space-y-8 max-w-[1400px] mx-auto">

@@ -3,14 +3,7 @@ import { redirect } from "next/navigation";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { LogOut, Camera } from "lucide-react";
 import { SidebarNav } from "@/components/admin/SidebarNav";
-
-// Whitelist for development convenience
-const ADMIN_EMAILS = [
-  "arkar.p67@rsu.ac.th",
-  "nayzar.a66@rsu.ac.th",
-  "ye.z67@rsu.ac.th",
-  "arthurphyo99.gs@gmail.com"
-];
+import { ADMIN_EMAILS } from "@/lib/config";
 
 export default async function AdminLayout({
   children,

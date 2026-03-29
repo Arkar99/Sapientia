@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
+export const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "");
 
 // Using gemini-2.5-flash - the primary stable workhorse for March 2026
 export const chatModel = genAI.getGenerativeModel({ 

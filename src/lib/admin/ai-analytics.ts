@@ -1,5 +1,6 @@
 import { kv } from '@vercel/kv';
-import { chatModel } from '@/lib/ai/gemini';
+import { genAI } from '@/lib/ai/gemini';
+import { KV_KEYS } from '@/lib/config';
 
 export interface AIAnalyticsEvent {
   id: string;
@@ -14,13 +15,24 @@ export interface AIAnalyticsEvent {
   isCorrection: boolean;
 }
 
-const KV_KEY = 'ai_analytics';
+/**
+ * Dedicated lightweight model for structured JSON extraction.
+ * Uses low temperature and token limit since we only need terse JSON output —
+ * completely separate from the user-facing chatModel.
+ */
+const analyticsModel = genAI.getGenerativeModel({
+  model: "gemini-3.1-flash-lite-preview",
+  generationConfig: {
+    maxOutputTokens: 300,
+    temperature: 0.1,
+  },
+});
 
 export async function getAnalyticsData(): Promise<AIAnalyticsEvent[]> {
   try {
-    const data = await kv.get<AIAnalyticsEvent[]>(KV_KEY);
+    const data = await kv.get<AIAnalyticsEvent[]>(KV_KEYS.analytics);
     const events = data || [];
-    return events.sort((a, b) => 
+    return events.sort((a, b) =>
       new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
     );
   } catch (error) {
@@ -30,9 +42,9 @@ export async function getAnalyticsData(): Promise<AIAnalyticsEvent[]> {
 }
 
 export async function trackChatAnalytics(
-  userId: string, 
+  userId: string,
   sessionId: string,
-  userMessage: string, 
+  userMessage: string,
   aiResponse: string
 ) {
   try {
@@ -59,37 +71,36 @@ export async function trackChatAnalytics(
       Ensure output is highly sanitized and correctly formatted JSON.
     `;
 
-    const result = await chatModel.generateContent(prompt);
+    const result = await analyticsModel.generateContent(prompt);
     let textResponse = result.response.text();
-    // Clean markdown if present
     textResponse = textResponse.replace(/^```json/g, '').replace(/```$/g, '').trim();
-    
-    let analysis;
+
+    let analysis: Record<string, unknown>;
     try {
       analysis = JSON.parse(textResponse);
-    } catch (e) {
-      console.error("Failed to parse Gemini analytics JSON", textResponse);
+    } catch {
+      console.error("Failed to parse analytics JSON:", textResponse);
       return;
     }
 
     const newEvent: AIAnalyticsEvent = {
-        id: crypto.randomUUID(),
-        timestamp: new Date().toISOString(),
-        userId: userId || 'anonymous',
-        sessionId: sessionId || 'unknown',
-        entities: {
-          user: analysis.user || { brands: [], models: [] },
-          ai: analysis.ai || { brands: [], models: [] }
-        },
-        sentiment: analysis.sentiment || 'neutral',
-        isCorrection: analysis.isCorrection || false
-     };
+      id: crypto.randomUUID(),
+      timestamp: new Date().toISOString(),
+      userId: userId || 'anonymous',
+      sessionId: sessionId || 'unknown',
+      entities: {
+        user: (analysis.user as AIAnalyticsEvent['entities']['user']) || { brands: [], models: [] },
+        ai: (analysis.ai as AIAnalyticsEvent['entities']['ai']) || { brands: [], models: [] },
+      },
+      sentiment: (analysis.sentiment as AIAnalyticsEvent['sentiment']) || 'neutral',
+      isCorrection: (analysis.isCorrection as boolean) || false,
+    };
 
     const data = await getAnalyticsData();
     data.push(newEvent);
-    await kv.set(KV_KEY, data);
+    await kv.set(KV_KEYS.analytics, data);
 
   } catch (error) {
-     console.error("Error tracking chat analytics to KV:", error);
+    console.error("Error tracking chat analytics to KV:", error);
   }
 }

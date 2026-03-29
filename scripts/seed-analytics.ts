@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 
-const BRANDS = ["Canon", "Sony", "Nikon", "Fujifilm", "Panasonic", "Leica"];
 const MODELS = [
   { brand: "Canon", model: "EOS R5 Mark II" },
   { brand: "Canon", model: "EOS R6 II" },
