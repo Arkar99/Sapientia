@@ -157,7 +157,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
                 <Line type="monotone" dataKey="Chats" stroke="#f97316" strokeWidth={3} dot={{ r: 4 }} activeDot={{ r: 6 }} />
                 <CartesianGrid stroke="#333" strokeDasharray="5 5" vertical={false} />
                 <XAxis dataKey="date" stroke="#888" tick={{fontSize: 12}} />
-                <YAxis stroke="#888" tick={{fontSize: 12}} />
+                <YAxis allowDecimals={false} stroke="#888" tick={{fontSize: 12}} />
                 <Tooltip contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
               </LineChart>
             </ResponsiveContainer>
@@ -176,7 +176,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={userBrands} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#333" />
-                  <XAxis type="number" stroke="#888" />
+                  <XAxis type="number" allowDecimals={false} stroke="#888" />
                   <YAxis dataKey="name" type="category" stroke="#888" width={80} tick={{fontSize: 12}} />
                   <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
                   <Bar dataKey="Count" fill="#3b82f6" radius={[0, 4, 4, 0]} barSize={20} />
@@ -194,7 +194,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={userModels} layout="vertical" margin={{ top: 5, right: 30, left: 40, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#333" />
-                    <XAxis type="number" stroke="#888" />
+                    <XAxis type="number" allowDecimals={false} stroke="#888" />
                     <YAxis dataKey="name" type="category" stroke="#888" width={100} tick={{fontSize: 12}} />
                     <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
                     <Bar dataKey="Count" fill="#60a5fa" radius={[0, 4, 4, 0]} barSize={20} />
@@ -216,7 +216,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={aiBrands} layout="vertical" margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                   <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#333" />
-                  <XAxis type="number" stroke="#888" />
+                  <XAxis type="number" allowDecimals={false} stroke="#888" />
                   <YAxis dataKey="name" type="category" stroke="#888" width={80} tick={{fontSize: 12}} />
                   <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
                   <Bar dataKey="Count" fill="#10b981" radius={[0, 4, 4, 0]} barSize={20} />
@@ -234,7 +234,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart data={aiModels} layout="vertical" margin={{ top: 5, right: 30, left: 40, bottom: 5 }}>
                     <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#333" />
-                    <XAxis type="number" stroke="#888" />
+                    <XAxis type="number" allowDecimals={false} stroke="#888" />
                     <YAxis dataKey="name" type="category" stroke="#888" width={100} tick={{fontSize: 12}} />
                     <Tooltip cursor={{fill: 'rgba(255,255,255,0.05)'}} contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
                     <Bar dataKey="Count" fill="#34d399" radius={[0, 4, 4, 0]} barSize={20} />
@@ -256,7 +256,7 @@ export function AnalyticsCharts({ initialData }: { initialData: AIAnalyticsEvent
               <AreaChart data={moodData} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                 <CartesianGrid stroke="#333" strokeDasharray="3 3" vertical={false} />
                 <XAxis dataKey="date" stroke="#888" tick={{fontSize: 12}} />
-                <YAxis stroke="#888" tick={{fontSize: 12}} />
+                <YAxis allowDecimals={false} stroke="#888" tick={{fontSize: 12}} />
                 <Tooltip contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }} />
                 <Legend iconType="circle" />
                 <Area type="monotone" dataKey="Happy" stackId="1" stroke="#10b981" fill="#10b981" fillOpacity={0.6} />
