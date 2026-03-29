@@ -17,9 +17,15 @@ export function Chatbox() {
   const { t, locale } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
+  const [sessionId, setSessionId] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  // Initialize Session ID
+  useEffect(() => {
+    setSessionId(crypto.randomUUID());
+  }, []);
 
   // Auto-scroll to bottom
   useEffect(() => {
@@ -42,7 +48,8 @@ export function Chatbox() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
           messages: [...messages, userMessage],
-          locale: locale 
+          locale: locale,
+          sessionId: sessionId
         }),
       });
 

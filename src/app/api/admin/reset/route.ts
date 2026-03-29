@@ -19,9 +19,23 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     }
 
-    const { type } = await req.json();
+    const { type, action = 'reset' } = await req.json();
 
     if (type === 'analytics') {
+      if (action === 'seed') {
+        const fs = require('fs');
+        const path = require('path');
+        const seedPath = path.join(process.cwd(), 'src', 'data', 'ai_analytics.json');
+        
+        let seedData = [];
+        if (fs.existsSync(seedPath)) {
+          seedData = JSON.parse(fs.readFileSync(seedPath, 'utf-8'));
+        }
+        
+        await kv.set('ai_analytics', seedData);
+        return NextResponse.json({ success: true, message: "AI Analytics seeded successfully" });
+      }
+      
       await kv.set('ai_analytics', []);
       return NextResponse.json({ success: true, message: "AI Analytics reset successfully" });
     } else if (type === 'orders') {

@@ -8,11 +8,11 @@ import { auth } from "@clerk/nextjs/server";
 
 export async function POST(req: Request) {
   try {
-    const { messages, locale = "en" } = await req.json();
+    const { messages, locale = "en", sessionId = "unknown" } = await req.json();
     const lastMessage = messages[messages.length - 1].content;
     const { userId } = await auth();
 
-    console.log("📝 Chat Query:", lastMessage);
+    console.log("📝 Chat Query:", lastMessage, "Session:", sessionId);
 
     // 1. Generate embedding for the user's query
     console.log("🌊 Generating embedding...");
@@ -63,7 +63,7 @@ export async function POST(req: Request) {
     console.log("✨ Response generated.");
 
     // Asynchronously log analytics (fire and forget)
-    trackChatAnalytics(userId || "anonymous", lastMessage, responseText)
+    trackChatAnalytics(userId || "anonymous", sessionId, lastMessage, responseText)
       .catch(e => console.error("Analytics failure", e));
 
     return NextResponse.json({ role: "assistant", content: responseText });

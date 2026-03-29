@@ -5,6 +5,7 @@ export interface AIAnalyticsEvent {
   id: string;
   timestamp: string;
   userId: string;
+  sessionId: string;
   entities: {
     user: { brands: string[], models: string[] };
     ai: { brands: string[], models: string[] };
@@ -18,7 +19,10 @@ const KV_KEY = 'ai_analytics';
 export async function getAnalyticsData(): Promise<AIAnalyticsEvent[]> {
   try {
     const data = await kv.get<AIAnalyticsEvent[]>(KV_KEY);
-    return data || [];
+    const events = data || [];
+    return events.sort((a, b) => 
+      new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+    );
   } catch (error) {
     console.error("Failed to read analytics from KV:", error);
     return [];
@@ -27,6 +31,7 @@ export async function getAnalyticsData(): Promise<AIAnalyticsEvent[]> {
 
 export async function trackChatAnalytics(
   userId: string, 
+  sessionId: string,
   userMessage: string, 
   aiResponse: string
 ) {
@@ -36,7 +41,12 @@ export async function trackChatAnalytics(
       User said: "${userMessage}"
       AI replied: "${aiResponse}"
 
-      Focus precisely on camera brands (e.g., Canon, Nikon, Sony) and models (e.g., EOS R5, A7 IV, Z8).
+      Focus precisely on REAL camera brands (e.g., Canon, Nikon, Sony) and REAL models that exist in the real world (e.g., EOS R5, A7 IV, Z8).
+      
+      CRITICAL RULE: Ignore non-existent or imaginary models. 
+      - Example: "Sony A6000" is real and should be extracted.
+      - Example: "Sony A1921" is a fake model and MUST be ignored entirely. Do not extract it.
+
       Extract the following information and output it EXACTLY as a JSON object, with NO markdown formatting, NO backticks, just the raw JSON:
       {
         "user": { "brands": ["string"], "models": ["string"] }, 
@@ -63,16 +73,17 @@ export async function trackChatAnalytics(
     }
 
     const newEvent: AIAnalyticsEvent = {
-       id: crypto.randomUUID(),
-       timestamp: new Date().toISOString(),
-       userId: userId || 'anonymous',
-       entities: {
-         user: analysis.user || { brands: [], models: [] },
-         ai: analysis.ai || { brands: [], models: [] }
-       },
-       sentiment: analysis.sentiment || 'neutral',
-       isCorrection: analysis.isCorrection || false
-    };
+        id: crypto.randomUUID(),
+        timestamp: new Date().toISOString(),
+        userId: userId || 'anonymous',
+        sessionId: sessionId || 'unknown',
+        entities: {
+          user: analysis.user || { brands: [], models: [] },
+          ai: analysis.ai || { brands: [], models: [] }
+        },
+        sentiment: analysis.sentiment || 'neutral',
+        isCorrection: analysis.isCorrection || false
+     };
 
     const data = await getAnalyticsData();
     data.push(newEvent);
