@@ -30,7 +30,7 @@ export function ProductCategories() {
           <Link
             key={category.key}
             href={`#${category.key}`}
-            className="group flex flex-col items-center justify-center p-6 bg-muted/30 rounded-2xl border border-border/50 hover:bg-muted/80 hover:border-border hover:shadow-md transition-all duration-300"
+            className="group flex flex-col items-center justify-center p-4 md:p-6 bg-muted/30 rounded-2xl border border-border/50 hover:bg-muted/80 hover:border-border hover:shadow-md transition-all duration-300"
           >
             <div className="h-16 w-16 mb-4 rounded-full bg-background flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-500 shadow-sm">
               <category.icon className="h-8 w-8" />

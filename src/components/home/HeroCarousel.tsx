@@ -54,7 +54,7 @@ export function HeroCarousel() {
   const scrollTo = useCallback((index: number) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
 
   return (
-    <section className="relative w-full h-[50vh] min-h-[400px] overflow-hidden bg-muted rounded-3xl group mt-4">
+    <section className="relative w-full h-[50vh] min-h-[300px] md:min-h-[400px] overflow-hidden bg-muted rounded-2xl md:rounded-3xl group mt-4">
       <div className="overflow-hidden h-full" ref={emblaRef}>
         <div className="flex h-full">
           {slides.map((slide) => (
@@ -69,17 +69,17 @@ export function HeroCarousel() {
               <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
 
               {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-16 container mx-auto">
-                <span className="inline-block w-fit px-3 py-1 bg-accent-sapientia/20 text-accent-sapientia rounded-full text-xs font-semibold tracking-wider mb-4 animate-in slide-in-from-bottom-5 border border-accent-sapientia/30">
+              <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-16 container mx-auto">
+                <span className="inline-block w-fit px-3 py-1 bg-accent-sapientia/20 text-accent-sapientia rounded-full text-xs font-semibold tracking-wider mb-3 md:mb-4 animate-in slide-in-from-bottom-5 border border-accent-sapientia/30">
                   {slide.badge}
                 </span>
-                <h1 className="text-4xl md:text-6xl font-extrabold text-foreground mb-4 max-w-2xl leading-tight animate-in slide-in-from-bottom-6">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-3 md:mb-4 max-w-2xl leading-tight animate-in slide-in-from-bottom-6">
                   {slide.title}
                 </h1>
-                <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl animate-in slide-in-from-bottom-7">
+                <p className="text-sm md:text-lg lg:text-xl text-foreground/80 mb-5 md:mb-8 max-w-xl animate-in slide-in-from-bottom-7 line-clamp-2 md:line-clamp-none">
                   {slide.desc}
                 </p>
-                <button className="w-fit bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-xl animate-in slide-in-from-bottom-8">
+                <button className="w-fit bg-primary text-primary-foreground px-6 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-xl animate-in slide-in-from-bottom-8 text-sm md:text-base">
                   {slide.btn}
                 </button>
               </div>
@@ -88,19 +88,19 @@ export function HeroCarousel() {
         </div>
       </div>
 
-      {/* Controls */}
-      <div className="absolute bottom-6 right-8 flex gap-3 z-10">
-        <button 
+      {/* Controls — bottom-left on mobile, bottom-right on desktop */}
+      <div className="absolute bottom-4 left-4 md:left-auto md:bottom-6 md:right-8 flex gap-2 md:gap-3 z-10">
+        <button
           onClick={scrollPrev}
-          className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-md flex items-center justify-center text-foreground hover:bg-background transition-colors hover:scale-110"
+          className="h-9 w-9 md:h-12 md:w-12 rounded-full bg-background/50 backdrop-blur-md flex items-center justify-center text-foreground hover:bg-background transition-colors hover:scale-110"
         >
-          <ChevronLeft className="h-6 w-6" />
+          <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
         </button>
-        <button 
+        <button
           onClick={scrollNext}
-          className="h-12 w-12 rounded-full bg-background/50 backdrop-blur-md flex items-center justify-center text-foreground hover:bg-background transition-colors hover:scale-110"
+          className="h-9 w-9 md:h-12 md:w-12 rounded-full bg-background/50 backdrop-blur-md flex items-center justify-center text-foreground hover:bg-background transition-colors hover:scale-110"
         >
-          <ChevronRight className="h-6 w-6" />
+          <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
         </button>
       </div>
       

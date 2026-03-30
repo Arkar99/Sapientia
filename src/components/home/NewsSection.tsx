@@ -41,8 +41,8 @@ export function NewsSection() {
           <h2 className="text-3xl font-bold tracking-tight mb-2">{t("news.title")}</h2>
           <p className="text-muted-foreground">{t("news.desc")}</p>
         </div>
-        <Link href="/blog" className="hidden md:flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors group">
-          Go to Blog 
+        <Link href="/blog" className="flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition-colors group">
+          Go to Blog
           <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>

@@ -128,7 +128,7 @@ export function Chatbox() {
             initial={{ y: 20, opacity: 0, scale: 0.95 }}
             animate={{ y: 0, opacity: 1, scale: 1 }}
             exit={{ y: 20, opacity: 0, scale: 0.95 }}
-            className="fixed bottom-6 right-6 z-50 w-[380px] sm:w-[500px] shadow-2xl rounded-2xl overflow-hidden bg-background border border-border flex flex-col h-[700px]"
+            className="fixed inset-0 sm:inset-auto sm:bottom-6 sm:right-6 z-50 sm:w-[380px] md:w-[500px] shadow-2xl sm:rounded-2xl overflow-hidden bg-background border border-border flex flex-col sm:h-[700px]"
           >
             {/* Header */}
             <div className="bg-primary text-primary-foreground px-4 py-4 flex items-center justify-between shadow-md">
