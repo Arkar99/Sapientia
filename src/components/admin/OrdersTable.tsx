@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { formatTHB } from "@/lib/ai/gemini";
 
 interface Items {
   productId: string;
@@ -25,9 +26,6 @@ interface OrdersTableProps {
 }
 
 export function OrdersTable({ orders, isFullView = false }: OrdersTableProps) {
-  const formatTHB = (amount: number) => {
-    return new Intl.NumberFormat('th-TH', { style: 'currency', currency: 'THB' }).format(amount);
-  };
 
   const truncate = (text: string, length: number) => {
     return text.length > length ? text.substring(0, length) + '...' : text;

@@ -27,6 +27,9 @@ export function ProductScroller({ title, products, viewAllLink = "#", translatio
   const scrollRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
 
+  const formatTHB = (amount: number) =>
+    new Intl.NumberFormat('th-TH', { style: 'currency', currency: 'THB' }).format(amount);
+
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const scrollAmount = 300;
@@ -106,11 +109,11 @@ export function ProductScroller({ title, products, viewAllLink = "#", translatio
               <div className="flex items-center justify-between pt-2">
                 <div className="flex items-end gap-2">
                   <span className="text-lg font-bold text-foreground">
-                    ${product.price.toLocaleString()}
+                    {formatTHB(product.price)}
                   </span>
                   {product.originalPrice && (
                     <span className="text-sm text-muted-foreground line-through mb-0.5">
-                      ${product.originalPrice.toLocaleString()}
+                      {formatTHB(product.originalPrice)}
                     </span>
                   )}
                 </div>
