@@ -73,3 +73,61 @@ export function loadAnalyticsSeed(): AIAnalyticsEvent[] {
     return [];
   }
 }
+/**
+ * Get all inventory products mapped to the Product UI type.
+ * Used by Home page and Search page.
+ */
+export function getMappedProducts(): any[] {
+  try {
+    const inventory = loadInventory();
+    const cameras = loadCameras();
+
+    const generateId = (brand: string, model: string) =>
+      `${brand}-${model}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+    return inventory.map((invItem: any) => {
+      const cam = cameras.find((c: any) => generateId(c.Brand, c.Model) === invItem.id);
+      return {
+        id: invItem.id,
+        name: cam ? `${cam.Brand} ${cam.Model}` : invItem.id,
+        price: invItem.price_thb,
+        image: cam && cam.image_file ? `/${cam.image_file}` : "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=600&auto=format&fit=crop",
+        rating: Number((Math.random() * (5 - 4.2) + 4.2).toFixed(1)),
+        reviews: Math.floor(Math.random() * 300) + 10,
+        isNew: Math.random() > 0.8
+      };
+    });
+  } catch (error) {
+    console.error("Failed to fetch products:", error);
+    return [];
+  }
+}
+
+/**
+ * Get a single product by ID with full details.
+ * Used for the Product Detail page.
+ */
+export function getProductById(id: string): any {
+  try {
+    const inventory = loadInventory();
+    const cameras = loadCameras();
+    const invItem = inventory.find((item: any) => item.id === id);
+    if (!invItem) return null;
+
+    const generateId = (brand: string, model: string) =>
+      `${brand}-${model}`.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+    const cam = cameras.find((c: any) => generateId(c.Brand, c.Model) === id);
+
+    return {
+      ...invItem,
+      ...cam,
+      name: cam ? `${cam.Brand} ${cam.Model}` : invItem.id,
+      price: invItem.price_thb,
+      image: cam && cam.image_file ? `/${cam.image_file}` : "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=600&auto=format&fit=crop",
+    };
+  } catch (error) {
+    console.error(`Failed to fetch product with id ${id}:`, error);
+    return null;
+  }
+}

@@ -10,14 +10,25 @@ import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { LanguageToggle } from "@/components/layout/LanguageToggle";
 import { useLanguage } from "@/lib/LanguageContext";
 import { ADMIN_EMAILS } from "@/lib/config";
+import { useRouter } from "next/navigation";
 
 export function Navbar() {
+  const router = useRouter();
   const { userId } = useAuth();
   const { user } = useUser();
   const { t } = useLanguage();
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [searchQuery, setSearchQuery] = React.useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+      setIsMenuOpen(false);
+    }
+  };
 
   React.useEffect(() => {
     setMounted(true);
@@ -105,14 +116,16 @@ export function Navbar() {
 
           {/* Center: Search Bar (desktop only) */}
           <div className="hidden md:flex flex-1 max-w-md mx-6 relative">
-            <div className="relative w-full overflow-hidden rounded-full border border-border/50 bg-muted/30 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+            <form onSubmit={handleSearch} className="relative w-full overflow-hidden rounded-full border border-border/50 bg-muted/30 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <input
                 type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder={t("nav.search")}
                 className="w-full bg-transparent py-2 pl-9 pr-4 text-sm outline-none placeholder:text-muted-foreground"
               />
-            </div>
+            </form>
           </div>
 
           {/* Right: Actions */}
@@ -190,14 +203,16 @@ export function Navbar() {
 
         {/* Mobile Search */}
         <div className="px-4 py-3 border-b border-border/50">
-          <div className="relative w-full overflow-hidden rounded-full border border-border/50 bg-muted/30 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
+          <form onSubmit={handleSearch} className="relative w-full overflow-hidden rounded-full border border-border/50 bg-muted/30 focus-within:ring-2 focus-within:ring-primary/20 transition-all">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
               type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
               placeholder={t("nav.search")}
               className="w-full bg-transparent py-2 pl-9 pr-4 text-sm outline-none placeholder:text-muted-foreground"
             />
-          </div>
+          </form>
         </div>
 
         {/* Nav Links */}

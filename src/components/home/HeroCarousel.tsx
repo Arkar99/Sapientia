@@ -22,7 +22,7 @@ export function HeroCarousel() {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1617005082133-543597d5402a?q=80&w=2000&auto=format&fit=crop",
+      image: "/carousel/hero-2.png",
       badge: t("hero.slide2.badge"),
       title: t("hero.slide2.title"),
       desc: t("hero.slide2.desc"),
